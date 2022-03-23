@@ -36,7 +36,7 @@ This guide will help you to implement a search page into your website in seconds
 
 {# note: the "content" block must be available in your master layout, see optional config above. #}
 {% block content %}
-    {{ render(controller('LuceneSearchBundle:List:getResult')) }}
+    {{ render(controller('LuceneSearchBundle\\Controller\\ListController::getResultAction', [])) }}
 {% endblock %}
 ```
 

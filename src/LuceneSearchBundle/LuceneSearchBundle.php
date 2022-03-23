@@ -13,7 +13,7 @@ class LuceneSearchBundle extends AbstractPimcoreBundle
 {
     use PackageVersionTrait;
 
-    const PACKAGE_NAME = 'dachcom-digital/lucene-search';
+    const PACKAGE_NAME = 'pringuin/pimcore-lucene-search';
 
     /**
      * @inheritDoc
