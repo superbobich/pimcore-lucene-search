@@ -2,12 +2,17 @@
 ![lucenesearch crawler](https://cloud.githubusercontent.com/assets/700119/25579028/7da66f40-2e74-11e7-8da5-988d61feb2e2.jpg)
 
 ## Note
-The Pimcore Lucene Search Bundle will be marked as abandoned as soon the [Dynamic Search Bundle](https://github.com/dachcom-digital/pimcore-dynamic-search) reached a stable state.
-After that, bugfixing will be supported in some cases. However, PRs are always welcome.
+This is a fork of the original dachcom-digital/pimcore-lucene-search repository.
+Dachcom did not update this bundle for Pimcore X in favor of the [Dynamic Search Bundle](https://github.com/dachcom-digital/pimcore-dynamic-search)
+
+This includes changes by [yosoDev](https://github.com/yosoDev) and [beheist](https://github.com/beheist), thanks a lot!
 
 ### Requirements
-- Pimcore >= 5.8
-- Pimcore >= 6.0
+- Pimcore >= 10.
+
+#### Pimcore 5/6
+Get the Pimcore 5/6 Version [here](https://github.com/dachcom-digital/pimcore-lucene-search).
+
 
 #### Pimcore 4 
 Get the Pimcore4 Version [here](https://github.com/dachcom-digital/pimcore-lucene-search/tree/pimcore4).
@@ -18,7 +23,7 @@ Get the Pimcore4 Version [here](https://github.com/dachcom-digital/pimcore-lucen
 
 ```json
 "require" : {
-    "dachcom-digital/lucene-search" : "~2.3.0"
+    "pringuin/pimcore-lucene-search" : "~3.0.0"
 }
 ```
 
