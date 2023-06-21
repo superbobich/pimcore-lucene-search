@@ -528,7 +528,7 @@ class ParserTask extends AbstractTask
 
             $doc->addField(\Zend_Search_Lucene_Field::text('title', $params['title'], $params['encoding']));
             $doc->addField(\Zend_Search_Lucene_Field::text('description', $params['description'], $params['encoding']));
-            $doc->addField(\Zend_Search_Lucene_Field::text('customMeta', strip_tags($params['custom_meta']), $params['encoding']));
+            $doc->addField(\Zend_Search_Lucene_Field::text('customMeta', strip_tags((string)$params['custom_meta']), $params['encoding']));
 
             $doc->addField(\Zend_Search_Lucene_Field::text('content', $content, $params['encoding']));
             $doc->addField(\Zend_Search_Lucene_Field::text('imageTags', join(',', $tags)));
