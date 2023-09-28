@@ -445,8 +445,8 @@ class ParserTask extends AbstractTask
 
                 $parserEvent = new PdfParserEvent($doc, $fileContent, $assetMeta, $params);
                 $this->eventDispatcher->dispatch(
-                    LuceneSearchEvents::LUCENE_SEARCH_PARSER_PDF_DOCUMENT,
-                    $parserEvent
+                    $parserEvent,
+                    LuceneSearchEvents::LUCENE_SEARCH_PARSER_PDF_DOCUMENT
                 );
 
                 $doc = $parserEvent->getDocument();
@@ -625,8 +625,8 @@ class ParserTask extends AbstractTask
 
             $event = new AssetResourceRestrictionEvent($resource);
             $this->eventDispatcher->dispatch(
-                LuceneSearchEvents::LUCENE_SEARCH_PARSER_ASSET_RESTRICTION,
-                $event
+                $event,
+                LuceneSearchEvents::LUCENE_SEARCH_PARSER_ASSET_RESTRICTION
             );
 
             if ($event->getAsset() instanceof Asset) {

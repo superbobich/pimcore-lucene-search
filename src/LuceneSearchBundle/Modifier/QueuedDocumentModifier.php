@@ -149,8 +149,8 @@ final class QueuedDocumentModifier
 
             $modificationEvent = new DocumentModificationEvent($newDocument, $marking);
             $this->eventDispatcher->dispatch(
-                LuceneSearchEvents::LUCENE_SEARCH_DOCUMENT_MODIFICATION,
-                $modificationEvent
+                $modificationEvent,
+                LuceneSearchEvents::LUCENE_SEARCH_DOCUMENT_MODIFICATION          
             );
 
             $this->index->delete($documentId);

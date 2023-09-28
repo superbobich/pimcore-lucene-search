@@ -416,8 +416,8 @@ class FrontendController extends PimcoreFrontEndController
 
         $event = new RestrictionContextEvent();
         \Pimcore::getEventDispatcher()->dispatch(
+            $event,
             LuceneSearchEvents::LUCENE_SEARCH_FRONTEND_RESTRICTION_CONTEXT,
-            $event
         );
 
         try {
