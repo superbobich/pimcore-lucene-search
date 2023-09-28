@@ -5,7 +5,7 @@ namespace LuceneSearchBundle\Task\Crawler\Event;
 use LuceneSearchBundle\Logger\AbstractLogger;
 use LuceneSearchBundle\LuceneSearchEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 use Symfony\Component\EventDispatcher\GenericEvent;
 use VDB\Spider\Event\SpiderEvents;
 
